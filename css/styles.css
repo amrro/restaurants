@@ -64,10 +64,13 @@ nav {
     height: 80px;
     background-color: #252831;
     text-align: center;
+    margin:  0 auto;
 }
 
 nav h1 {
     margin: auto;
+    height:  80px;
+    position:  relative;
 }
 
 nav h1 a {
@@ -76,6 +79,15 @@ nav h1 a {
     font-weight: 200;
     letter-spacing: 10px;
     text-transform: uppercase;
+    margin:  0 auto;
+    text-align:  center;
+    /* width:  100%; */
+    position:  absolute;
+    top: 0;
+    bottom:  0;
+    right:  0;
+    left:  0;
+    padding:  20px;
 }
 
 #breadcrumb {
@@ -121,9 +133,11 @@ nav h1 a {
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
     width: 100%;
-    height: 50px;
-    background-color: #3397DB;
+    display: inline-block;
+    padding: 10px;
+    background-color: #901c1c;
     align-items: center;
+    text-align:  center;
 }
 
 .filter-options h2 {
@@ -132,6 +146,7 @@ nav h1 a {
     font-weight: normal;
     line-height: 1;
     margin: 0 20px;
+    /* margin-left: 100px; */
 }
 
 .filter-options select {
@@ -148,11 +163,12 @@ nav h1 a {
 
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
-    background-color: #f3f3f3;
+    background-color: #fdfdfd;
     list-style: outside none none;
-    margin: 0;
+    margin: auto;
     padding: 30px 15px 60px;
     text-align: center;
+    width:  100%;
 }
 
 #restaurants-list li {
@@ -164,12 +180,14 @@ nav h1 a {
     padding: 0 30px 25px;
     text-align: left;
     width: 270px;
+    display:  inline-block;
 }
 
 #restaurants-list .restaurant-img {
     background-color: #ccc;
     display: block;
     margin: 0;
+    width: 100%;
     max-width: 100%;
     min-height: 248px;
     min-width: 100%;
