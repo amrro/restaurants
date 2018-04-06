@@ -130,6 +130,12 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
         ul.append(createRestaurantHTML(restaurant));
     });
     addMarkersToMap();
+
+    this.map.addListener('tilesloaded', function() {
+        [].slice.apply(document.querySelectorAll('#map a')).forEach(function(item) {
+            item.setAttribute('tabindex','-1');
+        });
+    });
 };
 
 /**
@@ -162,6 +168,7 @@ createRestaurantHTML = (restaurant) => {
     const more = document.createElement('a');
     more.innerHTML = 'View Details';
     more.href = DBHelper.urlForRestaurant(restaurant);
+    more.setAttribute('tabindex', '3');
     li.append(more);
 
     li.className = "restaurants-list";
