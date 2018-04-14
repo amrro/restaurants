@@ -343,7 +343,12 @@ nav h1 a {
 }
 
 
-
+@media screen and (max-width: 450px){
+    #map-container {
+        width: 100%;
+        order: -1;
+    }
+}
 
 @media screen and (min-width: 450px) {
     #map-container {
