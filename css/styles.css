@@ -136,7 +136,7 @@ nav h1 a {
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
-    width: 100%;
+    width: calc(100% - 10px);;
     display: inline-block;
     padding: 10px;
     background-color: #901c1c;
@@ -200,7 +200,7 @@ nav h1 a {
     min-width: 100%;
 }
 
-#restaurants-list li h1 {
+#restaurants-list li h2 {
     color: #f18200;
     font-family: Arial, sans-serif;
     font-size: 14pt;

@@ -162,8 +162,9 @@ createRestaurantHTML = (restaurant) => {
     li.append(image);
 
     // adding restaurant's name to card
-    const name = document.createElement('h1');
+    const name = document.createElement('h2');
     name.innerHTML = restaurant.name;
+    // name.className = 'restaurant-name';
     li.append(name);
 
     // adding restaurant's neighborhood to card
