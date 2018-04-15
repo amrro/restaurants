@@ -170,9 +170,10 @@ nav h1 a {
     background-color: #fdfdfd;
     list-style: outside none none;
     margin: auto;
-    padding: 30px 15px 60px;
+    /* padding: 30px 15px 60px; */
     text-align: center;
     width: 100%;
+    padding-left: 0px;
     /* display: inline-block; */
     /* flex-wrap:  wrap; */
 }
@@ -359,6 +360,13 @@ nav h1 a {
 
     .filter-options select {
         width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 270px)  {
+    #restaurants-list li {
+        width: 80%;
     }
 }
 
