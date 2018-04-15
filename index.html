@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"/>
@@ -36,12 +36,12 @@
             <h2>Filter Results</h2>
 
             <!--Neighborhoods-->
-            <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+            <select tabindex="1" id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()" aria-label="select">
                 <option value="all">All Neighborhoods</option>
             </select>
 
             <!--cuisines-->
-            <select tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()">
+            <select tabindex="2" id="cuisines-select" name="cuisines" onchange="updateRestaurants()" aria-label="select">
                 <option value="all">All Cuisines</option>
             </select>
         </div>
